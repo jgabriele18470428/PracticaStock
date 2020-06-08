@@ -1,4 +1,5 @@
 import { StocksService } from './services/stocks.service';
+import { AppRoutes } from './app.routes';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -17,7 +18,7 @@ ManageComponent
 imports: [
 BrowserModule,
 HttpClientModule
-],
+AppRoutes],
 providers: [StocksService],
 bootstrap: [AppComponent]
 })
